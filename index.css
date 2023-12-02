@@ -1,0 +1,92 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1515890435782-59a5bb6ec191?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.app {
+    display: flex; /* displays flex-items (children) inline */
+    flex-direction: column; /* stacks them vertically */
+    height: 100vh; /* needs to take the parents height, alternative: body {display: flex} */
+    gap: 5px;
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+.logo{
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav-items > ul{
+    display: flex;
+    /* padding: 0px 20px; */
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border-radius: 9px;
+    flex-shrink: 0;
+    height: 60px;
+}
+
+.main-body{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border-radius: 9px;
+}
+
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.submit-btn, .clear-btn, .username, .partnername{
+    width: 50%;
+    height: 50px;
+    padding: 4px;
+    border-radius: 9px;
+    font-size: large;
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+.submit-btn:hover, .clear-btn:hover, .username:focus, .partnername:focus{
+    box-shadow: 5px 5px;
+}
+
+.result{
+    font-size: 300%
+}
