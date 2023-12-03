@@ -3,7 +3,8 @@ const BodyComponent = () => {
   return (
     <div className="main-body">
       <div className="inputs-container">
-        <h2>A 🫶 percentage calculator</h2>
+        <h2>A relationship predictor 💖 </h2>
+        <h3>Find the compatibility between you and your partner 👻</h3>
         <input placeholder="Enter your name" className="username" />
         <input placeholder="Enter your partners name" className="partnername" />
         <button
